@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+    --brand-gradient: linear-gradient(to right, #f97116, #ec0b69, #5a09d3);
+}
+
+/* Text-এর জন্য */
+.gradient-text {
+    background-image: var(--brand-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 65px;
+}
+
+/* Button / background-এর জন্য */
+.gradient-bg {
+    background-image: var(--brand-gradient);
+}
+
+.gradient-btn {
+    background-color: #e1e5eb;
+    color: black;
+    border: 2px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 16px;
+    font-weight: 600;
+}
+
+
+
+/* bg-gray-100 text-black border-2 shadow-lg shadow-violet-500/30 */
+.gradient-btn:hover {
+    background-image: var(--brand-gradient);
+    color: white;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

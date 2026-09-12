@@ -1,0 +1,257 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building fast and interactive user interfaces.",
+    "icon": "https://cdn.simpleicons.org/react/61DAFB",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular",
+    "badgeIcon": "🔥",
+    "categoryChip": "Frontend",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime for building scalable server-side applications.",
+    "icon": "https://cdn.simpleicons.org/nodedotjs/339933",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Essential",
+    "badgeIcon": "⭐",
+    "categoryChip": "Backend",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Python",
+    "category": "Language",
+    "description": "A versatile programming language known for simplicity, readability, and a large ecosystem.",
+    "icon": "https://cdn.simpleicons.org/python/3776AB",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular",
+    "badgeIcon": "🔥",
+    "categoryChip": "Language",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 4,
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source relational database built for reliability and complex workloads.",
+    "icon": "https://cdn.simpleicons.org/postgresql/4169E1",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential",
+    "badgeIcon": "⭐",
+    "categoryChip": "Database",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for rapidly building custom and responsive interfaces.",
+    "icon": "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast",
+    "badgeIcon": "⚡",
+    "categoryChip": "Styling",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for packaging applications and their dependencies into portable containers.",
+    "icon": "https://cdn.simpleicons.org/docker/2496ED",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Containers",
+    "badgeIcon": "📦",
+    "categoryChip": "DevOps",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system for tracking changes and collaborating on code.",
+    "icon": "https://cdn.simpleicons.org/git/F05032",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential",
+    "badgeIcon": "⭐",
+    "categoryChip": "Tools",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 8,
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language that builds on JavaScript for safer application development.",
+    "icon": "https://cdn.simpleicons.org/typescript/3178C6",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular",
+    "badgeIcon": "🔥",
+    "categoryChip": "Language",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for building full-stack web applications with server-side rendering and modern routing.",
+    "icon": "https://cdn.simpleicons.org/nextdotjs/000000",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Fast",
+    "badgeIcon": "⚡",
+    "categoryChip": "Frontend",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 10,
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A document-oriented NoSQL database designed for flexible and scalable applications.",
+    "icon": "https://cdn.simpleicons.org/mongodb/47A248",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular",
+    "badgeIcon": "🔥",
+    "categoryChip": "Database",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "description": "An open-source platform for automating deployment, scaling, and management of containers.",
+    "icon": "https://cdn.simpleicons.org/kubernetes/326CE5",
+    "rating": 4.7,
+    "difficulty": "Advanced",
+    "badge": "Containers",
+    "badgeIcon": "📦",
+    "categoryChip": "DevOps",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Figma",
+    "category": "Tools",
+    "description": "A collaborative design and prototyping tool for creating modern digital product interfaces.",
+    "icon": "https://cdn.simpleicons.org/figma/F24E1E",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular",
+    "badgeIcon": "🔥",
+    "categoryChip": "Tools",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Express",
+    "category": "Backend",
+    "description": "A minimal and flexible Node.js web framework for building APIs and server applications.",
+    "icon": "https://cdn.simpleicons.org/express/000000",
+    "rating": 4.6,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Fast",
+    "badgeIcon": "⚡",
+    "categoryChip": "Backend",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 14,
+    "name": "HTML5",
+    "category": "Frontend",
+    "description": "The standard markup language used to structure content and interfaces on the web.",
+    "icon": "https://cdn.simpleicons.org/html5/E34F26",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential",
+    "badgeIcon": "⭐",
+    "categoryChip": "Frontend",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  },
+  {
+    "id": 15,
+    "name": "AWS",
+    "category": "DevOps",
+    "description": "A comprehensive cloud platform providing infrastructure, compute, storage, databases, and developer services.",
+    "icon": "https://cdn.simpleicons.org/amazonaws/232F3E",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Essential",
+    "badgeIcon": "⭐",
+    "categoryChip": "DevOps",
+    "ratingIcon": "★",
+    "action": {
+      "label": "Add to Stack",
+      "type": "button"
+    }
+  }
+]
