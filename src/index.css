@@ -13,11 +13,11 @@
     color: transparent;
     font-size: 65px;
 }
-
-/* Button / background-এর জন্য */
-.gradient-bg {
-    background-image: var(--brand-gradient);
+.tech-h2-text {
+    font-size: 30px;
 }
+
+
 
 .gradient-btn {
     background-color: #e1e5eb;
@@ -28,7 +28,6 @@
     border-radius: 16px;
     font-weight: 600;
 }
-
 
 
 /* bg-gray-100 text-black border-2 shadow-lg shadow-violet-500/30 */

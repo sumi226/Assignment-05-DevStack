@@ -6,8 +6,9 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-100/95 backdrop-blur-md h-[80px] sticky top-0 z-50 border-b border-gray-200">
+    <nav className="bg-gray-100/95 backdrop-blur-md h-20 sticky top-0 z-50 border-b border-gray-200">
       <div className="container mx-auto h-full px-4">
+
         {/* ================= DESKTOP + MOBILE HEADER ================= */}
         <div className="h-full flex items-center justify-between">
           {/* Mobile: Hamburger */}
@@ -21,15 +22,9 @@ function Navbar() {
           {/* Logo + Brand */}
           <div className="flex items-center gap-2">
             <img
-              src={Logo}
-              alt="Dev Stack Logo"
-              className="w-12 h-12 object-contain"
+              src={Logo} alt="" className="w-40 h-40 object-contain"
             />
 
-            {/* Brand name - desktop only */}
-            <h1 className="hidden md:block text-2xl font-bold bg-gradient-to-r from-blue-900 via-violet-700 to-pink-700 bg-clip-text text-transparent">
-              Dev Stack
-            </h1>
           </div>
 
           {/* Desktop Menu */}
