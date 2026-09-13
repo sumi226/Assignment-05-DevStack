@@ -8,7 +8,6 @@ function Navbar() {
   return (
     <nav className="bg-gray-100/95 backdrop-blur-md h-20 sticky top-0 z-50 border-b border-gray-200">
       <div className="container mx-auto h-full px-4">
-
         {/* ================= DESKTOP + MOBILE HEADER ================= */}
         <div className="h-full flex items-center justify-between">
           {/* Mobile: Hamburger */}
@@ -21,10 +20,7 @@ function Navbar() {
 
           {/* Logo + Brand */}
           <div className="flex items-center gap-2">
-            <img
-              src={Logo} alt="" className="w-40 h-40 object-contain"
-            />
-
+            <img src={Logo} alt="" className="w-40 h-40 object-contain" />
           </div>
 
           {/* Desktop Menu */}
@@ -53,12 +49,15 @@ function Navbar() {
           {/* Right Buttons */}
           <div className="flex items-center gap-2">
             {/* Sign In */}
-            <button className="px-3 md:px-5  py-2 rounded-full  font-semibold  text-gray-700  hover:bg-pink-500 hover:text-white transition-all duration-300">
+            <button
+              className="px-3 md:px-5  py-2 rounded-full  font-semibold  text-gray-700  hover:bg-pink-500 hover:text-white 
+            shadow-lg shadow-violet-500/30  transition-all duration-300"
+            >
               Sign In
             </button>
 
             {/* Sign Up */}
-            <button className="px-3 md:px-5  py-2 rounded-full  font-semibold  text-gray-700  hover:bg-pink-500 hover:text-white transition-all duration-300">
+            <button className="px-3 md:px-5  py-2 rounded-full  font-semibold  text-gray-700  shadow-lg shadow-violet-500/30  hover:bg-pink-500 hover:text-white transition-all duration-300">
               Sign Up
             </button>
           </div>

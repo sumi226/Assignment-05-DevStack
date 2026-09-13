@@ -1,9 +1,12 @@
+
 import { Suspense, useState } from "react";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import TechCard from "./components/technologies/TechCard";
 import Stack from "./components/technologies/Stack";
-import type  {ITechnology}from "./components/type/techTypes.ts"
+import type { ITechnology } from "./components/type/techTypes";
+import FooterTop from "./components/FooterTop";
+import FooterBtm from "./components/FooterBtm";
 
 const technologiesFetch = async (): Promise<ITechnology[]> => {
   const res = await fetch("/data.json");
@@ -21,27 +24,35 @@ const technologiesPromise = technologiesFetch();
 
 function App() {
   const [stack, setStack] = useState<ITechnology[]>([]);
-  // Add to stack
+
+  // Add Technology to Stack
   const handleAddToStack = (technology: ITechnology) => {
-    const alreadyAdded = stack.some((item) => item.id === technology.id);
+    setStack((prev) => {
+      const alreadyAdded = prev.some(
+        (item) => item.id === technology.id
+      );
 
-    if (alreadyAdded) {
-      alert(`${technology.name} is already in your stack!`);
-      return;
-    }
+      if (alreadyAdded) {
+        alert(`${technology.name} is already in your stack!`);
+        return prev;
+      }
 
-    setStack((prev) => [...prev, technology]);
+      return [...prev, technology];
+    });
   };
 
-  // Remove single item
+  // Remove Single Technology
   const handleRemove = (id: number) => {
-    setStack((prev) => prev.filter((item) => item.id !== id));
+    setStack((prev) =>
+      prev.filter((item) => item.id !== id)
+    );
   };
 
-  // Remove all
+  // Remove All Technologies
   const handleRemoveAll = () => {
     setStack([]);
   };
+
   return (
     <>
       <Nav />
@@ -50,14 +61,18 @@ function App() {
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+
           {/* Technology Grid */}
           <div className="lg:col-span-3">
             <Suspense
-              fallback={<h2 className="text-center py-10">Loading...</h2>}
+              fallback={
+                <h2 className="text-center py-10">
+                  Loading...
+                </h2>
+              }
             >
               <TechCard
                 technologiesPromise={technologiesPromise}
-                stack={stack}
                 onAddToStack={handleAddToStack}
               />
             </Suspense>
@@ -71,8 +86,12 @@ function App() {
               onRemoveAll={handleRemoveAll}
             />
           </div>
+
         </div>
       </div>
+
+      <FooterTop />
+      <FooterBtm />
     </>
   );
 }

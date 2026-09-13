@@ -1,21 +1,27 @@
+
 import { use } from "react";
 import type { ITechnology } from "../type/techTypes";
 
 interface TechCardProps {
   technologiesPromise: Promise<ITechnology[]>;
+  onAddToStack: (technology: ITechnology) => void;
 }
 
-const TechCard = ({ technologiesPromise }: TechCardProps) => {
+const TechCard = ({
+  technologiesPromise,
+  onAddToStack,
+}: TechCardProps) => {
   const technologies = use(technologiesPromise);
 
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="container mx-auto">
+
         {/* Heading */}
         <div className="text-center mb-10">
-          <h2 className=" tech-h2-text text-xl md:text-2xl  font-extrabold text-gray-900">
+          <h2 className="text-[35px] font-extrabold text-gray-900">
             Explore the{" "}
-            <span className="  gradient-text text-xl md:text-2xl  text-transparent">
+            <span className="gradient-text tech-h2-text text-transparent">
               Technologies
             </span>
           </h2>
@@ -27,11 +33,13 @@ const TechCard = ({ technologiesPromise }: TechCardProps) => {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
           {technologies.map((technology) => (
             <div
               key={technology.id}
-              className=" bg-white border border-gray-200 rounded-2xl p-6  shadow-sm over:shadow-xl hover:-translate-y-1  transition-all duration-300"
+              className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
+
               {/* Icon + Badge */}
               <div className="flex items-center justify-between mb-5">
                 <img
@@ -78,11 +86,17 @@ const TechCard = ({ technologiesPromise }: TechCardProps) => {
               </div>
 
               {/* Add to Stack */}
-              <button className=" gradient-btn gradient-btn:hover shadow-lg shadow-violet-500/30  transition-all duration-300">
+              <button
+                type="button"
+                onClick={() => onAddToStack(technology)}
+                className="gradient-btn w-60 shadow-lg shadow-violet-500/30 transition-all duration-300"
+              >
                 {technology.action.label}
               </button>
+
             </div>
           ))}
+
         </div>
       </div>
     </section>
@@ -90,3 +104,4 @@ const TechCard = ({ technologiesPromise }: TechCardProps) => {
 };
 
 export default TechCard;
+
