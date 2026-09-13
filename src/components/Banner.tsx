@@ -10,7 +10,7 @@ const Banner = () => {
               Development Stack
             </span>
           </h2>
-          <p className="text-gray-500 my-5">
+          <p className="text-gray-500 font-medium my-5">
             Explore frontend, backend, database, and tooling options, compare
             them side by side, and put together the stack that fits your next
             project.
