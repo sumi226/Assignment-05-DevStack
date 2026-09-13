@@ -61,6 +61,7 @@ const TechCard = ({
               {/* Description */}
               <p className="mt-3 text-gray-600 leading-relaxed min-h-[72px]">
                 {technology.description}
+
               </p>
 
               {/* Category + Difficulty */}
