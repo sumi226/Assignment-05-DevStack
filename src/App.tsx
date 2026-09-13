@@ -26,6 +26,7 @@ function App() {
   const [stack, setStack] = useState<ITechnology[]>([]);
 
   // Add Technology to Stack
+
   const handleAddToStack = (technology: ITechnology) => {
     setStack((prev) => {
       const alreadyAdded = prev.some(
@@ -42,6 +43,7 @@ function App() {
   };
 
   // Remove Single Technology
+
   const handleRemove = (id: number) => {
     setStack((prev) =>
       prev.filter((item) => item.id !== id)
@@ -49,6 +51,7 @@ function App() {
   };
 
   // Remove All Technologies
+
   const handleRemoveAll = () => {
     setStack([]);
   };
@@ -63,6 +66,7 @@ function App() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
           {/* Technology Grid */}
+
           <div className="lg:col-span-3">
             <Suspense
               fallback={
@@ -79,6 +83,7 @@ function App() {
           </div>
 
           {/* Your Stack */}
+          
           <div className="lg:col-span-1">
             <Stack
               stack={stack}
